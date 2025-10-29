@@ -1,1 +1,2 @@
-{ "singleQuote": true }
+{ "singleQuote": true, "semi-colon": true, "tabWidth": 2, "useTabs": false }
+
