@@ -7,3 +7,7 @@ export async function getAllTasks() {
 export async function createTask(newTask) {
   return taskRepository.create(newTask);
 }
+
+export async function getTask(id){
+  return await taskRepository.getTaskbyId(id);
+}

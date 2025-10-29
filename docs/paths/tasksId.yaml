@@ -1,0 +1,23 @@
+get:
+  summary: Get post with {id}
+  tags: 
+    - Tasks
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: Filter tasks by id
+      schema:
+        type: integer
+        example: 1
+  responses:
+    '200':
+      description: Schema of Task
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Task.yaml
+    '400':
+        $ref: ../components/responses/BadRequest.yaml
+    '404':
+        $ref: ../components/responses/NotFoundError.yaml
